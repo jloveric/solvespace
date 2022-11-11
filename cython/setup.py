@@ -21,7 +21,6 @@ import git
 # install python submodules
 repo = git.Repo("..")
 for submodule in repo.submodules:
-    print(submodule)
     submodule.update(init=True)
 
 m_path = 'python_solvespace'

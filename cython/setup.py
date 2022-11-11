@@ -105,8 +105,6 @@ compiler_directives = {'binding': True, 'cdivision': True}
 
 
 def copy_source(dry_run):
-    
-
     dir_util.copy_tree(join('..', 'include'), include_path, dry_run=dry_run)
     dir_util.copy_tree(join('..', 'extlib', 'eigen', 'Eigen'), eigen_path, dry_run=dry_run)
     dir_util.copy_tree(join('..', 'extlib', 'mimalloc', 'include'),
